@@ -3,6 +3,7 @@ const app = express();
 const postRoutes = require('./routes/posts.routes');
 const userRoutes = require('./routes/users.routes');
 const itemRoutes = require('./routes/items.routes');
+const orderRoutes = require('./routes/orders.routes');
 
 const PORT = 3000;
 
@@ -15,7 +16,7 @@ app.use('/posts', postRoutes);
 
 app.use('/users', userRoutes);
 app.use('/items', itemRoutes);
-// app.use('/orders', orderRoutes);
+app.use('/orders', orderRoutes);
 
 app.listen(PORT, () => {
   console.log('Server listening on PORT:', PORT);
