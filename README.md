@@ -1,2 +1,1 @@
-# dadin-challenge-gold
-Challenge gold
+# challenge-gold
